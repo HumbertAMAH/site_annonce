@@ -39,8 +39,3 @@ class JobDetail(View):
     return render(request, 'annonce/job_detail.html', locals())
  
 
-class JobDetail(View):
- def get(self, request,pk):
-    job=Job.objects.get(pk=pk)
-    return render(request, 'annonce/job_detail.html', locals())
-
